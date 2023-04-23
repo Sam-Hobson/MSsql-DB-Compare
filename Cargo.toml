@@ -6,8 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-nwg = {version = "1.0.13", package = "native-windows-gui"}
-nwd = {version = "1.0.3", package = "native-windows-derive"}
-tokio = "1.27.0"
+# nwg = {version = "1.0.13", package = "native-windows-gui"}
+# nwd = {version = "1.0.3", package = "native-windows-derive"}
+tokio = {version = "1.27.0", features = ["full"]}
 futures = "0.3.28"
-quaint = "0.1.13"
+tiberius = "0.12.2"
+tokio-util = {version = "0.7.7", features = ["compat"]}
